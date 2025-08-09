@@ -18,9 +18,9 @@ def get_stock_object(stock_code):
 
 def write_info(stock):
     print(stock.info.get("longName"))
-    print(f"Stock Price: {stock.info.get("currentPrice")}")
-    print(f"52 Week High: {stock.info.get("fiftyTwoWeekHigh")}")
-    print(f"52 Week Low: {stock.info.get("fiftyTwoWeekLow")}")
+    print(f"Stock Price: {stock.info.get('currentPrice')}")
+    print(f"52 Week High: {stock.info.get('fiftyTwoWeekHigh')}")
+    print(f"52 Week Low: {stock.info.get('fiftyTwoWeekLow')}")
     trailing_yield_percent = round(stock.info.get("trailingAnnualDividendYield") * 100, 2)
     print(f"Trailing Annual Dividend Yield: {trailing_yield_percent}%")
     nav = calculate_nav(stock)
